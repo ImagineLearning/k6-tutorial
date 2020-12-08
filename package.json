@@ -6,7 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"start": "nodemon --ignore test/load/ --experimental-json-modules src/server.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"test:load": "k6 run test/load/api.test.js",
+		"test:load:docker": "docker-compose run --rm k6 run -e BASE_URL=http://api:3000 test/load/api.test.js"
 	},
 	"author": "Doug Ludlow <doug.ludlow@imaginelearning.com>",
 	"license": "MIT",
