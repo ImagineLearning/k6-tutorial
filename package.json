@@ -1,0 +1,23 @@
+{
+	"name": "k6-tutorial",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/server.js",
+	"type": "module",
+	"scripts": {
+		"start": "nodemon --ignore test/load/ --experimental-json-modules src/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Doug Ludlow <doug.ludlow@imaginelearning.com>",
+	"license": "MIT",
+	"dependencies": {
+		"koa": "^2.13.0",
+		"koa-bodyparser": "^4.3.0",
+		"koa-json-error": "^3.1.2",
+		"koa-router": "^10.0.0",
+		"koa2-oauth-server": "^1.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.6"
+	}
+}
