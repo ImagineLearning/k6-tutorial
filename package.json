@@ -20,6 +20,6 @@
 		"koa2-oauth-server": "^1.0.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.6"
+		"nodemon": "^2.0.22"
 	}
 }
